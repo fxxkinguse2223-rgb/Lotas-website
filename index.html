@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>株式会社Lotus｜採用もAIも、北九州やったら俺たちに聞けばよか。</title>
+  <title>株式会社Lotus｜採用もAIも、北九州やったら私たちに聞けばよか。</title>
   <meta name="description" content="北九州発の人材紹介・採用支援・AI活用スタートアップ、株式会社Lotus。AIを武器に、人材の価値を最大化します。" />
-  <meta name="theme-color" content="#06122b" />
+  <meta name="theme-color" content="#0d1f45" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪷</text></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -17,8 +18,10 @@
   <header class="site-header">
     <div class="header-inner">
       <a href="index.html" class="brand" aria-label="株式会社Lotus ホーム">
-        <span class="brand-mark">L</span>
-        <span>Lotus</span>
+        <div class="brand-logo">
+          <span class="brand-company">株式会社</span>
+          <span class="brand-name">Lotus</span>
+        </div>
       </a>
       <button class="nav-toggle" aria-label="メニューを開閉" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -32,19 +35,27 @@
     </div>
   </header>
 
-  <!-- ============ ヒーロー ============ -->
+  <!-- ============ ヒーロー（動画背景） ============ -->
   <section class="hero">
-    <div class="hero-media">
-      <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=2000&q=80"
-           alt="北九州の夜景 ドローン空撮イメージ" />
-    </div>
+    <!-- 動画: hero.mp4 と同じフォルダ -->
+    <video class="hero-video" autoplay loop muted playsinline poster="">
+      <source src="hero.mp4" type="video/mp4" />
+    </video>
+    <!-- 動画が読み込めない場合のフォールバック画像 -->
+    <img class="hero-fallback-img"
+         src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=2000&q=80"
+         alt="" aria-hidden="true" />
+
+    <!-- 暗めオーバーレイ -->
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <!-- ドローン風グリッド -->
     <div class="hero-grid" aria-hidden="true"></div>
 
     <div class="hero-content">
-      <span class="hero-location">KITAKYUSHU ・ FUKUOKA ・ JAPAN</span>
+      <span class="hero-location">Kitakyushu ・ Fukuoka ・ Japan</span>
       <h1 class="hero-title">
         <span class="line"><span>採用もAIも、</span></span>
-        <span class="line"><span>北九州やったら<span class="highlight">俺たちに聞けばよか。</span></span></span>
+        <span class="line"><span>北九州やったら<span class="highlight">私たちに聞けばよか。</span></span></span>
       </h1>
       <p class="hero-sub">
         地方から、未来の働き方を創る。<br />
@@ -56,22 +67,22 @@
       </div>
     </div>
 
-    <div class="hero-scroll">SCROLL</div>
+    <div class="hero-scroll">Scroll</div>
   </section>
 
   <!-- ============ インパクトストリップ ============ -->
   <div class="impact-strip" aria-hidden="true">
     <div class="marquee">
-      <span>RECRUITMENT</span>
-      <span>AI SOLUTIONS</span>
-      <span>DX PARTNER</span>
-      <span>KITAKYUSHU</span>
-      <span>LOCAL × GLOBAL</span>
-      <span>RECRUITMENT</span>
-      <span>AI SOLUTIONS</span>
-      <span>DX PARTNER</span>
-      <span>KITAKYUSHU</span>
-      <span>LOCAL × GLOBAL</span>
+      <span>Recruitment</span>
+      <span>AI Solutions</span>
+      <span>DX Partner</span>
+      <span>Kitakyushu</span>
+      <span>Local × Global</span>
+      <span>Recruitment</span>
+      <span>AI Solutions</span>
+      <span>DX Partner</span>
+      <span>Kitakyushu</span>
+      <span>Local × Global</span>
     </div>
   </div>
 
@@ -79,7 +90,7 @@
   <section class="section services-overview" style="max-width: none; padding-left: 0; padding-right: 0;">
     <div style="max-width: 1200px; margin: 0 auto; padding: 0 32px;">
       <div class="reveal" style="text-align: center;">
-        <span class="section-eyebrow" style="padding-left: 44px;">OUR SERVICES</span>
+        <span class="section-eyebrow" style="padding-left: 44px;">Our Services</span>
         <h2 class="section-title">2つの事業で、<br /><span class="accent">北九州のビジネスを加速させる。</span></h2>
         <p class="section-lead" style="margin: 0 auto;">
           Lotusが提供するのは「採用支援」と「AI活用」の2つ。<br />
@@ -90,7 +101,7 @@
       <div class="services-grid">
         <article class="service-card reveal reveal-delay-1">
           <div class="service-card-image">
-            <span class="service-card-label">RECRUITMENT</span>
+            <span class="service-card-label">Recruitment</span>
             <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80"
                  alt="採用面談・キャリア相談のイメージ" />
           </div>
@@ -124,27 +135,27 @@
   <!-- ============ 強み ============ -->
   <section class="section features">
     <div class="reveal" style="text-align: center;">
-      <span class="section-eyebrow">WHY LOTUS</span>
+      <span class="section-eyebrow">Why Lotus</span>
       <h2 class="section-title">私たちが選ばれる、<br /><span class="accent">3つの理由。</span></h2>
     </div>
 
     <div class="features-grid">
       <div class="feature reveal reveal-delay-1">
-        <div class="feature-num">01 / LOCAL</div>
+        <div class="feature-num">01 / Local</div>
         <h3 class="feature-title">北九州に、本気で根を張る。</h3>
         <p class="feature-desc">
           地元企業・求職者・教育機関との太いパイプ。机上の理論ではなく、"地域を歩いて集めた情報"で提案します。
         </p>
       </div>
       <div class="feature reveal reveal-delay-2">
-        <div class="feature-num">02 / AI-NATIVE</div>
+        <div class="feature-num">02 / AI-Native</div>
         <h3 class="feature-title">AIを"当たり前"に。</h3>
         <p class="feature-desc">
           創業メンバーが自らAIを使い倒す実務派。導入して終わりではなく、業務にフィットするまで伴走します。
         </p>
       </div>
       <div class="feature reveal reveal-delay-3">
-        <div class="feature-num">03 / SPEED</div>
+        <div class="feature-num">03 / Speed</div>
         <h3 class="feature-title">小さく、速く、動く。</h3>
         <p class="feature-desc">
           2名のスタートアップだからこそ、意思決定もレスポンスも速い。大企業では難しい柔軟な対応を実現します。
@@ -172,8 +183,10 @@
     <div class="footer-inner">
       <div class="footer-brand">
         <a href="index.html" class="brand">
-          <span class="brand-mark">L</span>
-          <span>Lotus</span>
+          <div class="brand-logo">
+            <span class="brand-company">株式会社</span>
+            <span class="brand-name">Lotus</span>
+          </div>
         </a>
         <p class="footer-desc">
           株式会社Lotusは、北九州を拠点に人材紹介・採用支援・AI活用を手がけるスタートアップです。
@@ -201,6 +214,12 @@
       <span>Kitakyushu, Japan</span>
     </div>
   </footer>
+
+  <!-- ============ 固定CTAボタン ============ -->
+  <a href="contact.html" class="cta-fixed" aria-label="お問い合わせページへ">
+    <span class="cta-fixed-icon">✉</span>
+    <span>Contact</span>
+  </a>
 
   <script src="js/main.js"></script>
 </body>
