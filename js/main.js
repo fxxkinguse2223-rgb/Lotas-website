@@ -5,6 +5,25 @@
 (function () {
   'use strict';
 
+  // ヒーロー動画の読み込み失敗時にフォールバック画像を表示
+  const heroVideo = document.querySelector('.hero-video');
+  if (heroVideo) {
+    const hideVideo = () => {
+      heroVideo.style.display = 'none';
+    };
+    heroVideo.addEventListener('error', hideVideo);
+    const heroSource = heroVideo.querySelector('source');
+    if (heroSource) {
+      heroSource.addEventListener('error', hideVideo);
+    }
+    // 一定時間経っても再生が始まらない場合はフォールバックに切り替え
+    setTimeout(() => {
+      if (heroVideo.readyState < 2) {
+        hideVideo();
+      }
+    }, 3500);
+  }
+
   // ヘッダーのスクロール状態
   const header = document.querySelector('.site-header');
   if (header) {

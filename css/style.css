@@ -324,18 +324,19 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: 0;
+  z-index: 1;
   pointer-events: none;
+  background: #000;
 }
 
-/* 動画フォールバック用 静止画 */
+/* 動画フォールバック用 静止画（動画の背後に常時配置） */
 .hero-fallback-img {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -1;
+  z-index: 0;
 }
 
 /* 暗めのオーバーレイ */

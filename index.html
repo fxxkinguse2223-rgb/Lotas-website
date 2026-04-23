@@ -37,14 +37,14 @@
 
   <!-- ============ ヒーロー（動画背景） ============ -->
   <section class="hero">
+    <!-- 動画が読み込めない場合のフォールバック画像（常時背後に配置） -->
+    <img class="hero-fallback-img"
+         src="hero-fallback.jpg"
+         alt="北九州市・若戸大橋と街並みの夜景" />
     <!-- 動画: sarakura.mp4 と同じフォルダ -->
-    <video class="hero-video" autoplay loop muted playsinline poster="">
+    <video class="hero-video" autoplay loop muted playsinline preload="auto" poster="hero-fallback.jpg">
       <source src="sarakura.mp4" type="video/mp4" />
     </video>
-    <!-- 動画が読み込めない場合のフォールバック画像 -->
-    <img class="hero-fallback-img"
-         src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=2000&q=80"
-         alt="" aria-hidden="true" />
 
     <!-- 暗めオーバーレイ -->
     <div class="hero-overlay" aria-hidden="true"></div>
