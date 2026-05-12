@@ -256,6 +256,16 @@ a {
   margin: 0 auto;
 }
 
+/* ダーク全幅セクション */
+.section.mission,
+.section.story,
+.section.features,
+.section.flow {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
 .section-eyebrow {
   display: inline-block;
   color: var(--orange-500);
