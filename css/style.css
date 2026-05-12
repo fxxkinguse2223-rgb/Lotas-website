@@ -37,7 +37,7 @@ html {
 }
 
 body {
-  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+  font-family: "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
   font-weight: 300;
   color: var(--navy-900);
   background: var(--white);
@@ -104,7 +104,7 @@ a {
 }
 
 .brand-company {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Zen Kaku Gothic New", sans-serif;
   font-size: 9px;
   font-weight: 300;
   letter-spacing: 0.35em;
@@ -279,9 +279,9 @@ a {
 }
 
 .section-title {
-  font-size: clamp(26px, 4vw, 40px);
-  font-weight: 300;
-  line-height: 1.45;
+  font-size: clamp(26px, 4vw, 42px);
+  font-weight: 400;
+  line-height: 1.5;
   letter-spacing: 0.04em;
   margin-bottom: 24px;
   color: var(--navy-900);
@@ -293,7 +293,7 @@ a {
 }
 
 .section-lead {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 300;
   color: var(--gray-700);
   max-width: 720px;
@@ -386,12 +386,12 @@ a {
 }
 
 .hero-title {
-  font-size: clamp(24px, 4vw, 50px);
-  font-weight: 200;
+  font-size: clamp(26px, 4.5vw, 54px);
+  font-weight: 300;
   letter-spacing: 0.05em;
   line-height: 1.45;
   margin-bottom: 28px;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Zen Kaku Gothic New", sans-serif;
 }
 
 .hero-title .line {
@@ -422,15 +422,16 @@ a {
 }
 
 .hero-sub {
-  font-size: clamp(13px, 1.5vw, 16px);
-  font-weight: 300;
+  font-size: clamp(16px, 1.8vw, 20px);
+  font-weight: 400;
   max-width: 680px;
   margin: 0 auto 40px;
-  color: rgba(255, 255, 255, 0.92);
-  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.96);
+  letter-spacing: 0.1em;
+  line-height: 2;
   opacity: 0;
   animation: fadeUp 1s var(--ease) 1.5s forwards;
-  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.7), 0 2px 20px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.8), 0 4px 32px rgba(0, 0, 0, 0.6);
 }
 
 .hero-cta {
@@ -536,7 +537,15 @@ a {
 
 /* ============ サービス概要（トップ） ============ */
 .services-overview {
-  background: var(--gray-50);
+  background: var(--navy-900);
+}
+
+.services-overview .section-title {
+  color: var(--white);
+}
+
+.services-overview .section-lead {
+  color: rgba(255, 255, 255, 0.72);
 }
 
 .services-grid {
@@ -549,14 +558,14 @@ a {
 .service-card {
   background: var(--white);
   overflow: hidden;
-  box-shadow: var(--shadow-md);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.35);
   transition: transform 0.5s var(--ease), box-shadow 0.5s var(--ease);
   position: relative;
 }
 
 .service-card:hover {
-  transform: translateY(-6px);
-  box-shadow: var(--shadow-lg);
+  transform: translateY(-8px);
+  box-shadow: 0 28px 64px rgba(0, 0, 0, 0.5);
 }
 
 .service-card-image {
@@ -603,18 +612,18 @@ a {
 
 .service-card-title {
   font-size: 22px;
-  font-weight: 300;
+  font-weight: 500;
   margin-bottom: 14px;
   color: var(--navy-900);
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
 }
 
 .service-card-desc {
   color: var(--gray-700);
-  font-size: 14px;
-  font-weight: 300;
+  font-size: 15.5px;
+  font-weight: 400;
   margin-bottom: 24px;
-  line-height: 2;
+  line-height: 1.95;
 }
 
 .service-card-link {
@@ -643,7 +652,7 @@ a {
 
 /* ============ 強み ============ */
 .features {
-  background: var(--white);
+  background: var(--gray-50);
 }
 
 .features-grid {
@@ -654,15 +663,15 @@ a {
 }
 
 .feature {
-  padding: 40px 28px;
-  background: var(--gray-50);
+  padding: 44px 32px;
+  background: var(--white);
   border-top: 2px solid var(--orange-500);
-  transition: transform 0.4s var(--ease);
+  box-shadow: 0 2px 12px rgba(13, 31, 69, 0.06);
+  transition: transform 0.4s var(--ease), box-shadow 0.4s var(--ease);
 }
 
 .feature:hover {
-  transform: translateY(-5px);
-  background: var(--white);
+  transform: translateY(-6px);
   box-shadow: var(--shadow-md);
 }
 
@@ -670,22 +679,23 @@ a {
   font-size: 11px;
   letter-spacing: 0.35em;
   color: var(--gold-500);
-  font-weight: 400;
-  margin-bottom: 16px;
+  font-weight: 500;
+  margin-bottom: 18px;
   text-transform: uppercase;
 }
 
 .feature-title {
-  font-size: 18px;
-  font-weight: 400;
-  margin-bottom: 12px;
+  font-size: 19px;
+  font-weight: 500;
+  margin-bottom: 14px;
   color: var(--navy-900);
+  letter-spacing: 0.03em;
 }
 
 .feature-desc {
   color: var(--gray-700);
-  font-size: 14px;
-  font-weight: 300;
+  font-size: 15px;
+  font-weight: 400;
   line-height: 2;
 }
 
@@ -714,18 +724,18 @@ a {
 }
 
 .cta-title {
-  font-size: clamp(22px, 3.5vw, 36px);
-  font-weight: 300;
+  font-size: clamp(24px, 3.5vw, 40px);
+  font-weight: 400;
   margin-bottom: 20px;
   line-height: 1.6;
   letter-spacing: 0.06em;
 }
 
 .cta-lead {
-  color: rgba(255, 255, 255, 0.72);
+  color: rgba(255, 255, 255, 0.82);
   margin-bottom: 40px;
-  font-size: 14px;
-  font-weight: 300;
+  font-size: 16px;
+  font-weight: 400;
   letter-spacing: 0.1em;
 }
 
@@ -833,16 +843,16 @@ a {
 }
 
 .page-hero-title {
-  font-size: clamp(28px, 5vw, 48px);
-  font-weight: 200;
-  letter-spacing: 0.12em;
+  font-size: clamp(30px, 5vw, 52px);
+  font-weight: 400;
+  letter-spacing: 0.1em;
   margin-bottom: 20px;
 }
 
 .page-hero-sub {
-  color: rgba(255, 255, 255, 0.65);
-  font-size: 14px;
-  font-weight: 300;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 16px;
+  font-weight: 400;
   letter-spacing: 0.1em;
 }
 
@@ -955,8 +965,8 @@ a {
 
 .member-desc {
   color: var(--gray-700);
-  font-size: 14px;
-  font-weight: 300;
+  font-size: 15px;
+  font-weight: 400;
   line-height: 2;
 }
 
@@ -977,8 +987,8 @@ a {
   margin-bottom: 20px;
   color: var(--gray-700);
   line-height: 2.1;
-  font-size: 14px;
-  font-weight: 300;
+  font-size: 15px;
+  font-weight: 400;
 }
 
 .story-text p strong {
@@ -1119,8 +1129,8 @@ a {
   background: var(--white);
   border-left: 2px solid var(--orange-500);
   box-shadow: 0 2px 8px rgba(13, 31, 69, 0.04);
-  font-size: 14px;
-  font-weight: 300;
+  font-size: 15px;
+  font-weight: 400;
   color: var(--gray-700);
   line-height: 1.9;
 }
@@ -1128,9 +1138,9 @@ a {
 .service-point-list li strong {
   display: block;
   color: var(--navy-900);
-  font-size: 15px;
+  font-size: 16px;
   margin-bottom: 6px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .service-detail.alt .service-point-list li {
@@ -1280,8 +1290,8 @@ a {
   padding: 14px 16px;
   border: 1px solid var(--gray-300);
   border-radius: 0;
-  font-size: 14px;
-  font-weight: 300;
+  font-size: 15px;
+  font-weight: 400;
   font-family: inherit;
   background: var(--gray-50);
   color: var(--navy-900);
