@@ -3,14 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>お問い合わせ | 株式会社SAKAI</title>
-  <meta name="description" content="採用・製品・取引に関するお問い合わせは以下のフォームからお気軽にどうぞ。初回のご相談は無料です。" />
+  <title>D-FLEXXカタログ | 株式会社SAKAI</title>
+  <meta name="description" content="機械防護用フェンス D-FLEXXの製品カタログです。SAKAIはTroax社の代理店として取り扱っています。" />
   <meta name="theme-color" content="#0d1f45" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/sakai.css" />
+  <style>
+    .catalog-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 4px;
+      margin-top: 48px;
+    }
+    @media (max-width: 640px) {
+      .catalog-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    .catalog-grid img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      display: block;
+    }
+  </style>
 </head>
 <body>
 
@@ -32,10 +51,10 @@
         <a href="company.html">会社概要</a>
         <a href="facility.html">工場と設備</a>
         <a href="custom4.html">製作品</a>
-        <a href="custom2.html">代理・特約店</a>
+        <a href="custom2.html" class="is-current">代理・特約店</a>
         <a href="access.html">アクセス</a>
         <a href="recruit.html">採用情報</a>
-        <a href="contact.html" class="is-current">お問い合わせ</a>
+        <a href="contact.html">お問い合わせ</a>
       </nav>
     </div>
   </header>
@@ -44,51 +63,55 @@
   <section class="page-hero">
     <div class="hero-grid" aria-hidden="true"></div>
     <div class="page-hero-inner">
-      <span class="page-hero-label">Contact</span>
-      <h1 class="page-hero-title">お問い合わせ</h1>
-      <p class="page-hero-sub">採用・製品・取引に関するお問い合わせは以下のフォームからお気軽にどうぞ。初回のご相談は無料です。</p>
+      <span class="page-hero-label">Catalog</span>
+      <h1 class="page-hero-title">D-FLEXXカタログ</h1>
+      <p class="page-hero-sub">機械防護用フェンス D-FLEXXの製品カタログです。</p>
     </div>
   </section>
 
-  <!-- お問い合わせセクション -->
-  <section class="section contact-section">
-    <div class="contact-layout">
+  <!-- カタロググリッド -->
+  <section class="section reveal">
+    <span class="section-eyebrow">Product Catalog</span>
+    <h2 class="section-title">製品カタログ一覧</h2>
+    <p class="section-lead">機械防護用フェンスD-FLEXXの詳細なカタログ画像をご覧いただけます。詳細はお問い合わせください。</p>
 
-      <!-- 連絡先情報 -->
-      <div class="contact-info reveal-left">
-        <h3>お気軽にご連絡ください</h3>
-        <p>製品・加工のご相談、採用のお問い合わせ、取引に関することなど、どんな内容でも歓迎です。</p>
+    <div class="catalog-grid">
+      <img src="img/image10.png" alt="D-FLEXX カタログ 1" />
+      <img src="img/image11.png" alt="D-FLEXX カタログ 2" />
+      <img src="img/image12.png" alt="D-FLEXX カタログ 3" />
+      <img src="img/image13.png" alt="D-FLEXX カタログ 4" />
+      <img src="img/image14.png" alt="D-FLEXX カタログ 5" />
+      <img src="img/image15.png" alt="D-FLEXX カタログ 6" />
+      <img src="img/image16.png" alt="D-FLEXX カタログ 7" />
+      <img src="img/image17.png" alt="D-FLEXX カタログ 8" />
+      <img src="img/image18.png" alt="D-FLEXX カタログ 9" />
+      <img src="img/image19.png" alt="D-FLEXX カタログ 10" />
+      <img src="img/image20.png" alt="D-FLEXX カタログ 11" />
+      <img src="img/image21.png" alt="D-FLEXX カタログ 12" />
+      <img src="img/image22.png" alt="D-FLEXX カタログ 13" />
+      <img src="img/image23.png" alt="D-FLEXX カタログ 14" />
+      <img src="img/image24.png" alt="D-FLEXX カタログ 15" />
+      <img src="img/image25.png" alt="D-FLEXX カタログ 16" />
+      <img src="img/image26.png" alt="D-FLEXX カタログ 17" />
+      <img src="img/image27.png" alt="D-FLEXX カタログ 18" />
+      <img src="img/image28.png" alt="D-FLEXX カタログ 19" />
+      <img src="img/image29.png" alt="D-FLEXX カタログ 20" />
+    </div>
 
-        <dl>
-          <div class="contact-info-item">
-            <dt>所在地</dt>
-            <dd>福岡県北九州市門司区</dd>
-          </div>
-          <div class="contact-info-item">
-            <dt>TEL</dt>
-            <dd><a href="tel:0933815534">093-381-5534</a></dd>
-          </div>
-          <div class="contact-info-item">
-            <dt>営業時間</dt>
-            <dd>平日 9:00〜17:30</dd>
-          </div>
-          <div class="contact-info-item">
-            <dt>メール</dt>
-            <dd><a href="mailto:inf@sakaishoten.com">inf@sakaishoten.com</a></dd>
-          </div>
-        </dl>
+    <div style="margin-top:48px;text-align:center;">
+      <a href="custom2.html" class="btn btn-ghost btn-arrow">代理・特約店に戻る</a>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-block">
+    <div class="cta-inner reveal">
+      <h2 class="cta-title">D-FLEXXに関するお問い合わせ</h2>
+      <p class="cta-lead">製品の仕様・お見積もり・納期についてはお気軽にご相談ください。</p>
+      <div class="hero-cta">
+        <a href="contact.html" class="btn btn-primary btn-arrow">お問い合わせ</a>
+        <a href="custom2.html" class="btn btn-ghost btn-arrow">代理・特約店に戻る</a>
       </div>
-
-      <!-- formrun フォーム -->
-      <div class="formrun-wrap reveal-right">
-        <script src="https://sdk.form.run/js/v2/embed.js"></script>
-        <div
-          class="formrun-embed"
-          data-formrun-form="@akari-tsuno-1612848935"
-          data-formrun-redirect="true"
-        ></div>
-      </div>
-
     </div>
   </section>
 

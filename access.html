@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>お問い合わせ | 株式会社SAKAI</title>
-  <meta name="description" content="採用・製品・取引に関するお問い合わせは以下のフォームからお気軽にどうぞ。初回のご相談は無料です。" />
+  <title>アクセス | 株式会社SAKAI</title>
+  <meta name="description" content="株式会社SAKAIの本社・工場・営業所のアクセス情報です。北九州市門司区に本社を構えています。" />
   <meta name="theme-color" content="#0d1f45" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -33,9 +33,9 @@
         <a href="facility.html">工場と設備</a>
         <a href="custom4.html">製作品</a>
         <a href="custom2.html">代理・特約店</a>
-        <a href="access.html">アクセス</a>
+        <a href="access.html" class="is-current">アクセス</a>
         <a href="recruit.html">採用情報</a>
-        <a href="contact.html" class="is-current">お問い合わせ</a>
+        <a href="contact.html">お問い合わせ</a>
       </nav>
     </div>
   </header>
@@ -44,51 +44,95 @@
   <section class="page-hero">
     <div class="hero-grid" aria-hidden="true"></div>
     <div class="page-hero-inner">
-      <span class="page-hero-label">Contact</span>
-      <h1 class="page-hero-title">お問い合わせ</h1>
-      <p class="page-hero-sub">採用・製品・取引に関するお問い合わせは以下のフォームからお気軽にどうぞ。初回のご相談は無料です。</p>
+      <span class="page-hero-label">Access</span>
+      <h1 class="page-hero-title">アクセス</h1>
+      <p class="page-hero-sub">本社・工場・営業所のアクセス情報です。</p>
     </div>
   </section>
 
-  <!-- お問い合わせセクション -->
-  <section class="section contact-section">
-    <div class="contact-layout">
+  <!-- 地図・住所セクション -->
+  <section class="section reveal">
+    <span class="section-eyebrow">Location</span>
+    <h2 class="section-title">所在地</h2>
+    <p class="section-lead">北九州市内に本社・複数の工場・営業所を構えています。</p>
 
-      <!-- 連絡先情報 -->
-      <div class="contact-info reveal-left">
-        <h3>お気軽にご連絡ください</h3>
-        <p>製品・加工のご相談、採用のお問い合わせ、取引に関することなど、どんな内容でも歓迎です。</p>
+    <!-- Google マップ -->
+    <div class="map-wrap reveal">
+      <iframe
+        src="https://maps.google.com/maps?q=福岡県北九州市門司区下二十町11番1号&output=embed"
+        frameborder="0"
+        allowfullscreen
+        loading="lazy"
+        title="株式会社SAKAI 本社地図"
+      ></iframe>
+    </div>
 
-        <dl>
-          <div class="contact-info-item">
-            <dt>所在地</dt>
-            <dd>福岡県北九州市門司区</dd>
-          </div>
-          <div class="contact-info-item">
-            <dt>TEL</dt>
-            <dd><a href="tel:0933815534">093-381-5534</a></dd>
-          </div>
-          <div class="contact-info-item">
-            <dt>営業時間</dt>
-            <dd>平日 9:00〜17:30</dd>
-          </div>
-          <div class="contact-info-item">
-            <dt>メール</dt>
-            <dd><a href="mailto:inf@sakaishoten.com">inf@sakaishoten.com</a></dd>
-          </div>
-        </dl>
+    <!-- 拠点カード -->
+    <div class="address-grid reveal">
+
+      <div class="address-card">
+        <span class="address-label">Head Office / 本社</span>
+        <p>
+          〒800-0028<br />
+          福岡県北九州市門司区下二十町11番1号<br />
+          TEL.093-381-5534<br />
+          FAX.093-381-5633
+        </p>
       </div>
 
-      <!-- formrun フォーム -->
-      <div class="formrun-wrap reveal-right">
-        <script src="https://sdk.form.run/js/v2/embed.js"></script>
-        <div
-          class="formrun-embed"
-          data-formrun-form="@akari-tsuno-1612848935"
-          data-formrun-redirect="true"
-        ></div>
+      <div class="address-card">
+        <span class="address-label">Processing / 加工部</span>
+        <p>
+          〒800-0115<br />
+          福岡県北九州市門司区新門司3丁目3-6<br />
+          TEL.093-481-6211<br />
+          FAX.093-481-6212
+        </p>
       </div>
 
+      <div class="address-card">
+        <span class="address-label">Manufacturing / 製造部</span>
+        <p>
+          〒800-0115<br />
+          福岡県北九州市門司区新門司3丁目3-1<br />
+          TEL.093-481-6911<br />
+          FAX.093-481-6912
+        </p>
+      </div>
+
+      <div class="address-card">
+        <span class="address-label">Kokura Factory / 小倉工場</span>
+        <p>
+          〒802-0031<br />
+          福岡県北九州市小倉北区赤坂海岸5番14号<br />
+          TEL.093-512-5511<br />
+          FAX.093-512-5512
+        </p>
+      </div>
+
+      <div class="address-card">
+        <span class="address-label">Tobata Office / 戸畑営業所</span>
+        <p>
+          〒804-0001<br />
+          福岡県北九州市戸畑区飛幡町2番2号<br />
+          飛幡ビル6F<br />
+          TEL.093-873-8611<br />
+          FAX.093-873-8612
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-block">
+    <div class="cta-inner reveal">
+      <h2 class="cta-title">ご来社・お問い合わせはお気軽に</h2>
+      <p class="cta-lead">ご不明な点がございましたら、まずはお電話またはお問い合わせフォームよりご連絡ください。</p>
+      <div class="hero-cta">
+        <a href="contact.html" class="btn btn-primary btn-arrow">お問い合わせ</a>
+        <a href="company.html" class="btn btn-ghost btn-arrow">会社概要を見る</a>
+      </div>
     </div>
   </section>
 
