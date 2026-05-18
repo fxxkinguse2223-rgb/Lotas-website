@@ -1,0 +1,308 @@
+/* ============================================================
+   株式会社SAKAI - 追加スタイル
+   base: css/style.css を継承
+   ============================================================ */
+
+/* ============ ヘッダー電話番号 ============ */
+.header-tel {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.65);
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+}
+@media (max-width: 960px) {
+  .header-tel { display: none; }
+}
+
+/* ============ 会社情報テーブル ============ */
+.sakai-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 40px;
+}
+.sakai-table th,
+.sakai-table td {
+  padding: 18px 20px;
+  text-align: left;
+  border-bottom: 1px solid var(--gray-300);
+  font-size: 14px;
+  font-weight: 300;
+  vertical-align: top;
+  line-height: 2;
+  color: var(--gray-700);
+}
+.sakai-table th {
+  width: 160px;
+  min-width: 120px;
+  color: var(--orange-500);
+  font-weight: 500;
+  white-space: nowrap;
+}
+.sakai-table tr:first-child th,
+.sakai-table tr:first-child td {
+  border-top: 1px solid var(--gray-300);
+}
+@media (max-width: 600px) {
+  .sakai-table th,
+  .sakai-table td {
+    display: block;
+    width: 100%;
+    padding: 10px 12px;
+  }
+  .sakai-table th {
+    border-bottom: none;
+    padding-bottom: 2px;
+  }
+}
+
+/* ============ 2カラムグリッド ============ */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  margin-top: 32px;
+}
+@media (max-width: 640px) {
+  .two-col { grid-template-columns: 1fr; }
+}
+
+/* ============ リストカード ============ */
+.list-card {
+  background: var(--white);
+  padding: 28px 24px;
+}
+.list-card ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.list-card li {
+  padding: 10px 14px;
+  background: var(--gray-50);
+  border-left: 2px solid var(--orange-500);
+  font-size: 14px;
+  color: var(--gray-700);
+  line-height: 1.7;
+}
+.clients-note {
+  font-size: 12px;
+  color: var(--gray-500);
+  margin-bottom: 12px;
+  text-align: right;
+}
+
+/* ============ 協力会社カード ============ */
+.partner-card {
+  background: var(--white);
+  padding: 28px 24px;
+  border-top: 2px solid var(--gold-500);
+}
+.partner-card dt {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--navy-900);
+  margin-bottom: 6px;
+}
+.partner-card dt a {
+  color: var(--navy-900);
+  text-decoration: none;
+  transition: color 0.25s var(--ease);
+}
+.partner-card dt a:hover { color: var(--orange-500); }
+.partner-card dd {
+  font-size: 13px;
+  color: var(--gray-700);
+  line-height: 1.9;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+/* ============ 住所カード ============ */
+.address-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2px;
+  margin-top: 40px;
+}
+@media (max-width: 640px) {
+  .address-grid { grid-template-columns: 1fr; }
+}
+.address-card {
+  background: var(--white);
+  padding: 28px 24px;
+  border-top: 2px solid var(--orange-500);
+}
+.address-label {
+  font-size: 11px;
+  letter-spacing: 0.35em;
+  color: var(--orange-500);
+  font-weight: 500;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+  display: block;
+}
+.address-card p {
+  font-size: 14px;
+  color: var(--gray-700);
+  line-height: 2;
+}
+.address-card a {
+  color: var(--navy-700);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.address-card a:hover { color: var(--orange-500); }
+
+/* ============ 地図 ============ */
+.map-wrap {
+  margin-top: 40px;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+.map-wrap iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+@media (max-width: 640px) {
+  .map-wrap { aspect-ratio: 4 / 3; }
+}
+
+/* ============ 事業内容 ============ */
+.biz-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-top: 48px;
+}
+.biz-item {
+  background: var(--white);
+  padding: 40px 36px;
+  border-top: 2px solid var(--orange-500);
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 40px;
+  align-items: start;
+}
+@media (max-width: 760px) {
+  .biz-item {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 32px 20px;
+  }
+}
+.biz-num {
+  font-size: 11px;
+  letter-spacing: 0.35em;
+  color: var(--gold-500);
+  font-weight: 500;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  display: block;
+}
+.biz-title {
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--navy-900);
+  margin-bottom: 0;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+}
+.biz-detail ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.biz-detail li {
+  padding: 12px 16px;
+  background: var(--gray-50);
+  border-left: 2px solid var(--orange-500);
+  font-size: 14px;
+  color: var(--gray-700);
+  line-height: 1.8;
+}
+.biz-badge {
+  display: inline-block;
+  background: var(--navy-900);
+  color: var(--white);
+  padding: 5px 14px;
+  font-size: 11px;
+  letter-spacing: 0.3em;
+  font-weight: 400;
+  margin-top: 24px;
+}
+.biz-badge.orange {
+  background: var(--orange-500);
+}
+
+/* ============ 写真コンテナ ============ */
+.photo-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  margin-top: 2px;
+}
+@media (max-width: 640px) {
+  .photo-strip { grid-template-columns: 1fr; }
+}
+.photo-strip img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+/* ============ フォーム（formrun）コンテナ ============ */
+.formrun-wrap {
+  margin-top: 48px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 40px 44px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 640px) {
+  .formrun-wrap { padding: 24px 16px; }
+}
+
+/* ============ フッターナビ（SAKAI） ============ */
+.footer-nav-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px 32px;
+  margin-top: 4px;
+}
+@media (max-width: 640px) {
+  .footer-nav-grid { grid-template-columns: repeat(2, 1fr); }
+}
+.footer-nav-grid a {
+  font-size: 12px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.55);
+  letter-spacing: 0.05em;
+  display: block;
+  padding: 4px 0;
+}
+.footer-nav-grid a:hover { color: var(--orange-500); }
+
+/* ============ パンくずリスト ============ */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 0.1em;
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+.breadcrumb a { color: rgba(255, 255, 255, 0.5); }
+.breadcrumb a:hover { color: var(--white); }
+.breadcrumb span { color: var(--orange-500); }
