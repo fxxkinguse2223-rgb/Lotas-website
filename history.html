@@ -3,126 +3,76 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>会社沿革 | 株式会社SAKAI</title>
-  <meta name="description" content="昭和36年の創業から現在までの株式会社SAKAIの歩みです。" />
-  <meta name="theme-color" content="#0d1f45" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/sakai.css" />
+  <title>沿革 | 株式会社SAKAI</title>
+  <meta name="description" content="株式会社SAKAIの沿革。昭和36年の創業から現在までの歩みをご覧いただけます。" />
+  <link rel="stylesheet" href="css/sakai-theme.css" />
 </head>
 <body>
 
-  <!-- ヘッダー -->
-  <header class="site-header is-solid">
-    <div class="header-inner">
-      <a href="index.html" class="brand" aria-label="株式会社SAKAI ホーム">
-        <div class="brand-logo">
-          <span class="brand-company">株式会社</span>
-          <span class="brand-name">SAKAI</span>
-        </div>
+  <header class="site-header">
+    <div class="header-top">
+      <a href="index.html" class="brand">
+        <span class="brand-name">SAKAI</span>
+        <span class="brand-company">株式会社SAKAI</span>
+        <span class="brand-tagline">All you need is realized with SAKAI</span>
       </a>
-      <span class="header-tel">TEL：093-381-5534</span>
+      <div class="header-info">
+        <div class="tel">TEL：093-381-5534</div>
+        <div class="address">〒800-0028 福岡県北九州市門司区下二十町11番-1号</div>
+      </div>
       <button class="nav-toggle" aria-label="メニューを開閉" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
-      <nav class="nav" aria-label="グローバルナビゲーション">
+    </div>
+    <nav class="site-nav" aria-label="グローバルナビゲーション">
+      <div class="nav-inner">
         <a href="business.html">事業内容</a>
         <a href="company.html">会社概要</a>
         <a href="facility.html">工場と設備</a>
-        <a href="custom4.html">製作品</a>
+        <a href="custom4.html">製品ギャラリー</a>
         <a href="custom2.html">代理・特約店</a>
         <a href="access.html">アクセス</a>
         <a href="recruit.html">採用情報</a>
         <a href="contact.html">お問い合わせ</a>
-      </nav>
-    </div>
+      </div>
+    </nav>
   </header>
 
-  <!-- ページヒーロー -->
-  <section class="page-hero">
-    <div class="hero-grid" aria-hidden="true"></div>
-    <div class="page-hero-inner">
-      <span class="page-hero-label">History</span>
-      <h1 class="page-hero-title">会社沿革</h1>
-      <p class="page-hero-sub">昭和36年の創業から現在までの歩みです。</p>
-    </div>
-  </section>
+  <nav class="breadcrumb" aria-label="パンくずリスト">
+    <span><a href="index.html">トップ</a></span>
+    <span>会社概要</span>
+    <span>沿革</span>
+  </nav>
 
-  <!-- 会社沿革コンテンツ -->
-  <section class="section reveal">
-    <span class="section-eyebrow">Company History</span>
-    <h2 class="section-title">沿革</h2>
-    <p class="section-lead">創業から60年以上、北九州の産業とともに歩んできた株式会社SAKAIの歴史です。</p>
+  <div class="page-title-bar"><h1>沿革</h1></div>
 
-    <div style="margin-top:48px;">
-      <img src="img/image2.png" alt="会社沿革" style="max-width:100%;height:auto;display:block;margin-bottom:32px;" />
-      <img src="img/image3.png" alt="会社沿革" style="max-width:100%;height:auto;display:block;" />
-    </div>
-  </section>
+  <main class="site-main">
+    <img src="img/image2.png" alt="沿革" class="full-img" onerror="this.style.display='none'">
+    <img src="img/image3.png" alt="沿革" class="full-img" style="margin-top:16px;" onerror="this.style.display='none'">
 
-  <!-- 関連ページ -->
-  <section class="section reveal" style="background:var(--gray-50);">
-    <span class="section-eyebrow">Related</span>
-    <h2 class="section-title">関連ページ</h2>
-    <div class="features-grid" style="margin-top:48px;">
-      <div class="feature reveal reveal-delay-1">
-        <div class="feature-num">Company</div>
-        <h3 class="feature-title"><a href="company.html" style="color:inherit;text-decoration:none;">会社概要</a></h3>
-        <p class="feature-desc">社名・代表者・所在地・資本金など基本情報をご覧いただけます。</p>
-        <a href="company.html" class="btn btn-ghost btn-arrow" style="margin-top:16px;font-size:13px;">詳しく見る</a>
-      </div>
-      <div class="feature reveal reveal-delay-2">
-        <div class="feature-num">Philosophy</div>
-        <h3 class="feature-title"><a href="philosophy.html" style="color:inherit;text-decoration:none;">企業理念と行動理念</a></h3>
-        <p class="feature-desc">SAKAIが大切にする価値観・行動理念をご紹介します。</p>
-        <a href="philosophy.html" class="btn btn-ghost btn-arrow" style="margin-top:16px;font-size:13px;">詳しく見る</a>
-      </div>
-    </div>
-  </section>
+  </main>
 
-  <!-- フッター -->
   <footer class="site-footer">
     <div class="footer-inner">
-      <div class="footer-brand">
-        <a href="index.html" class="brand">
-          <div class="brand-logo">
-            <span class="brand-company">株式会社</span>
-            <span class="brand-name">SAKAI</span>
-          </div>
-        </a>
-        <p class="footer-desc">北九州市門司区を拠点とする鋼材の流通及び金属加工業者。昭和36年の創業から、製缶・曲げ加工・鋼材販売を通じて産業を支えています。</p>
-      </div>
-      <div class="footer-col">
-        <h4>事業・製品</h4>
-        <ul>
-          <li><a href="business.html">事業内容</a></li>
-          <li><a href="quality.html">安全と品質</a></li>
-          <li><a href="facility.html">工場と設備</a></li>
-          <li><a href="custom4.html">製品ギャラリー</a></li>
-          <li><a href="custom1.html">主要取引先/協力会社</a></li>
-          <li><a href="custom2.html">代理・特約店</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>会社情報</h4>
-        <ul>
-          <li><a href="company.html">会社概要</a></li>
-          <li><a href="philosophy.html">企業理念と行動理念</a></li>
-          <li><a href="history.html">会社沿革</a></li>
-          <li><a href="access.html">アクセス</a></li>
-          <li><a href="recruit.html">採用情報</a></li>
-          <li><a href="contact.html">お問い合わせ</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© <span data-current-year>2025</span> 株式会社SAKAI. All rights reserved.</span>
-      <span>Kitakyushu, Japan</span>
+      <nav class="footer-nav" aria-label="フッターナビゲーション">
+        <a href="index.html">トップ</a>
+        <a href="business.html">事業内容</a>
+        <a href="company.html">会社概要</a>
+        <a href="custom4.html">製品ギャラリー</a>
+        <a href="facility.html">工場と設備</a>
+        <a href="philosophy.html">企業理念と行動理念</a>
+        <a href="contact.html">お問い合わせ</a>
+        <a href="quality.html">安全と品質</a>
+        <a href="history.html">沿革</a>
+        <a href="custom1.html">主要取引先／協力会社</a>
+        <a href="access.html">アクセス</a>
+        <a href="custom2.html">代理・特約店</a>
+        <a href="recruit.html">採用情報</a>
+      </nav>
+      <div class="footer-info"><a href="privacy.html">プライバシーポリシー</a><br>株式会社SAKAI　〒800-0028 福岡県北九州市門司区下二十町11-1　TEL.093-381-5534</div>
+      <div class="footer-copy">Copyright © SAKAI Co.,Ltd. All rights reserved.</div>
     </div>
   </footer>
-
-  <script src="js/main.js"></script>
+  <script src="js/sakai.js"></script>
 </body>
 </html>

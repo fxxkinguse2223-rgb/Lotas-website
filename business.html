@@ -4,171 +4,126 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>事業内容 | 株式会社SAKAI</title>
-  <meta name="description" content="株式会社SAKAIの事業内容。鋼材販売・曲げ加工・製缶の3事業を柱に、お客様の製造を支えます。" />
-  <meta name="theme-color" content="#0d1f45" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/sakai.css" />
+  <meta name="description" content="北九州市門司区を拠点とする株式会社SAKAIの事業内容。鋼材販売・曲げ加工・製缶の3事業を柱に、お客様の製造を支えます。" />
+  <link rel="stylesheet" href="css/sakai-theme.css" />
 </head>
 <body>
 
-  <!-- ============ ヘッダー ============ -->
-  <header class="site-header is-solid">
-    <div class="header-inner">
-      <a href="index.html" class="brand" aria-label="株式会社SAKAI ホーム">
-        <div class="brand-logo">
-          <span class="brand-company">株式会社</span>
-          <span class="brand-name">SAKAI</span>
-        </div>
+  <header class="site-header">
+    <div class="header-top">
+      <a href="index.html" class="brand">
+        <span class="brand-name">SAKAI</span>
+        <span class="brand-company">株式会社SAKAI</span>
+        <span class="brand-tagline">All you need is realized with SAKAI</span>
       </a>
-      <span class="header-tel">TEL：093-381-5534</span>
+      <div class="header-info">
+        <div class="tel">TEL：093-381-5534</div>
+        <div class="address">〒800-0028 福岡県北九州市門司区下二十町11番-1号</div>
+      </div>
       <button class="nav-toggle" aria-label="メニューを開閉" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
-      <nav class="nav" aria-label="グローバルナビゲーション">
-        <a href="business.html" class="is-current">事業内容</a>
+    </div>
+    <nav class="site-nav" aria-label="グローバルナビゲーション">
+      <div class="nav-inner">
+        <a href="business.html" class="active">事業内容</a>
         <a href="company.html">会社概要</a>
         <a href="facility.html">工場と設備</a>
-        <a href="custom4.html">製作品</a>
+        <a href="custom4.html">製品ギャラリー</a>
         <a href="custom2.html">代理・特約店</a>
         <a href="access.html">アクセス</a>
         <a href="recruit.html">採用情報</a>
         <a href="contact.html">お問い合わせ</a>
-      </nav>
-    </div>
+      </div>
+    </nav>
   </header>
 
-  <!-- ============ ページヒーロー ============ -->
-  <section class="page-hero">
-    <div class="hero-grid" aria-hidden="true"></div>
-    <div class="page-hero-inner">
-      <span class="page-hero-label">Business</span>
-      <h1 class="page-hero-title">事業内容</h1>
-      <p class="page-hero-sub">鋼材販売から製缶まで。技術と実績で、お客様の製造を支えます。</p>
-    </div>
-  </section>
+  <nav class="breadcrumb" aria-label="パンくずリスト">
+    <span><a href="index.html">トップ</a></span>
+    <span>事業内容</span>
+  </nav>
 
-  <!-- ============ 事業一覧 ============ -->
-  <section class="section reveal">
-    <span class="section-eyebrow">Our Business</span>
-    <h2 class="section-title">3つの事業</h2>
-    <p class="section-lead">鋼材の仕入れ・販売から精密な曲げ加工・製缶まで、一貫した体制で対応します。</p>
+  <div class="page-title-bar"><h1>事業内容</h1></div>
 
-    <div class="biz-list">
-      <!-- 01 鋼材販売 -->
-      <article class="biz-item reveal">
-        <div>
-          <span class="biz-num">01 / Steel Sales</span>
-          <h3 class="biz-title">鋼材販売</h3>
-        </div>
-        <div class="biz-detail">
-          <ul>
-            <li>一般鋼材販売</li>
-            <li>鋼材切断販売</li>
-          </ul>
-        </div>
-      </article>
+  <main class="site-main">
+    <p style="margin-bottom:32px;font-size:15px;line-height:1.9;">株式会社SAKAIは、鉄鋼部・加工部・製造部の3部門でお客様の製造をトータルサポートします。</p>
 
-      <!-- 02 曲げ加工 -->
-      <article class="biz-item reveal">
-        <div>
-          <span class="biz-num">02 / Bending</span>
-          <h3 class="biz-title">曲げ加工</h3>
-        </div>
-        <div class="biz-detail">
-          <ul>
-            <li>ベンディングロール加工</li>
-            <li>油圧プレス加工</li>
-            <li>ブレーキプレス加工</li>
-            <li>パイプベンダー加工</li>
-            <li>アングルベンダー加工</li>
-          </ul>
-        </div>
-      </article>
-
-      <!-- 03 製缶 -->
-      <article class="biz-item reveal">
-        <div>
-          <span class="biz-num">03 / Fabrication</span>
-          <h3 class="biz-title">製缶</h3>
-          <span class="biz-badge">天井クレーン製造認定工場</span>
-        </div>
-        <div class="biz-detail">
-          <ul>
-            <li>造船向け部品（ムーバブルランプ / ドア等）</li>
-            <li>建築・土木向け鋼構造品（鉄骨、型枠、桁、橋梁等）</li>
-            <li>プラント向け製缶</li>
-            <li>機械製缶品</li>
-            <li>機械加工品</li>
-            <li>第二種圧力容器</li>
-          </ul>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <!-- ============ 写真 ============ -->
-  <div class="photo-strip reveal">
-    <img src="img/P3.JPG" alt="製缶作業の様子" />
-    <img src="img/IMG_1.JPG" alt="工場設備" />
-    <img src="img/P4.JPG" alt="加工製品" />
-  </div>
-
-  <!-- ============ CTA ============ -->
-  <section class="cta-block">
-    <div class="cta-inner reveal">
-      <h2 class="cta-title">製品・加工に関するご相談は<br />お気軽にどうぞ</h2>
-      <p class="cta-lead">初回のご相談は無料です。</p>
-      <div class="hero-cta">
-        <a href="contact.html" class="btn btn-primary btn-arrow">お問い合わせ</a>
-        <a href="facility.html" class="btn btn-ghost btn-arrow">工場と設備を見る</a>
+    <div class="biz-item">
+      <div class="biz-text">
+        <h2>鉄鋼部</h2>
+        <p>一般鋼材・特殊鋼材の販売から切断販売まで、幅広い鋼材ニーズにお応えします。豊富な在庫と迅速な対応で、お客様の生産ラインを支えます。</p>
+        <ul class="biz-bullets">
+          <li>一般鋼材販売</li>
+          <li>鋼材切断販売</li>
+          <li>特殊材販売</li>
+        </ul>
+      </div>
+      <div class="biz-img">
+        <img src="img/31.jpg" alt="鉄鋼部" onerror="this.style.display='none'">
       </div>
     </div>
-  </section>
 
-  <!-- ============ フッター ============ -->
+    <div class="biz-item reverse">
+      <div class="biz-text">
+        <h2>加工部</h2>
+        <p>多様な曲げ加工技術を駆使し、お客様の設計通りの製品を製作します。ベンディングロールから油圧プレスまで、幅広い加工に対応します。</p>
+        <ul class="biz-bullets">
+          <li>ベンディングロール加工</li>
+          <li>油圧プレス加工</li>
+          <li>ブレーキプレス加工</li>
+          <li>パイプベンダー加工</li>
+          <li>アングルベンダー加工</li>
+        </ul>
+      </div>
+      <div class="biz-img">
+        <img src="img/IMG_1656.png" alt="加工部" onerror="this.style.display='none'">
+      </div>
+    </div>
+
+    <div class="biz-item">
+      <div class="biz-text">
+        <h2>製造部</h2>
+        <p>造船・建築・プラント向けの高精度な製缶・機械加工を行います。天井クレーン製造認定工場として、大型製品にも対応可能です。</p>
+        <ul class="biz-bullets">
+          <li>造船向け部品（ムーバブルランプ/ドア等）</li>
+          <li>建築・土木向け鋼構造品</li>
+          <li>プラント向け製缶・機械製缶品</li>
+          <li>機械加工品・第二種圧力容器</li>
+          <li>天井クレーン製造認定工場</li>
+        </ul>
+      </div>
+      <div class="biz-img">
+        <img src="img/P2220503.png" alt="製造部" onerror="this.style.display='none'">
+      </div>
+    </div>
+
+    <h2 class="sec-title">安全と品質</h2>
+    <p style="margin-bottom:16px;font-size:14px;">安全への取り組みと品質管理体制については下記をご覧ください。</p>
+    <a href="quality.html" style="display:inline-block;padding:10px 24px;background:var(--green-600);color:#fff;font-size:14px;">安全と品質 →</a>
+
+  </main>
+
   <footer class="site-footer">
     <div class="footer-inner">
-      <div class="footer-brand">
-        <a href="index.html" class="brand">
-          <div class="brand-logo">
-            <span class="brand-company">株式会社</span>
-            <span class="brand-name">SAKAI</span>
-          </div>
-        </a>
-        <p class="footer-desc">北九州市門司区を拠点とする鋼材の流通及び金属加工業者。昭和36年の創業から、製缶・曲げ加工・鋼材販売を通じて産業を支えています。</p>
-      </div>
-      <div class="footer-col">
-        <h4>事業・製品</h4>
-        <ul>
-          <li><a href="business.html">事業内容</a></li>
-          <li><a href="quality.html">安全と品質</a></li>
-          <li><a href="facility.html">工場と設備</a></li>
-          <li><a href="custom4.html">製品ギャラリー</a></li>
-          <li><a href="custom1.html">主要取引先/協力会社</a></li>
-          <li><a href="custom2.html">代理・特約店</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>会社情報</h4>
-        <ul>
-          <li><a href="company.html">会社概要</a></li>
-          <li><a href="philosophy.html">企業理念と行動理念</a></li>
-          <li><a href="history.html">会社沿革</a></li>
-          <li><a href="access.html">アクセス</a></li>
-          <li><a href="recruit.html">採用情報</a></li>
-          <li><a href="contact.html">お問い合わせ</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© <span data-current-year>2025</span> 株式会社SAKAI. All rights reserved.</span>
-      <span>Kitakyushu, Japan</span>
+      <nav class="footer-nav" aria-label="フッターナビゲーション">
+        <a href="index.html">トップ</a>
+        <a href="business.html">事業内容</a>
+        <a href="company.html">会社概要</a>
+        <a href="custom4.html">製品ギャラリー</a>
+        <a href="facility.html">工場と設備</a>
+        <a href="philosophy.html">企業理念と行動理念</a>
+        <a href="contact.html">お問い合わせ</a>
+        <a href="quality.html">安全と品質</a>
+        <a href="history.html">沿革</a>
+        <a href="custom1.html">主要取引先／協力会社</a>
+        <a href="access.html">アクセス</a>
+        <a href="custom2.html">代理・特約店</a>
+        <a href="recruit.html">採用情報</a>
+      </nav>
+      <div class="footer-info"><a href="privacy.html">プライバシーポリシー</a><br>株式会社SAKAI　〒800-0028 福岡県北九州市門司区下二十町11-1　TEL.093-381-5534</div>
+      <div class="footer-copy">Copyright © SAKAI Co.,Ltd. All rights reserved.</div>
     </div>
   </footer>
-
-  <script src="js/main.js"></script>
+  <script src="js/sakai.js"></script>
 </body>
 </html>

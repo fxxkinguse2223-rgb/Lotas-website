@@ -5,56 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>会社概要 | 株式会社SAKAI</title>
   <meta name="description" content="昭和36年の創業から、北九州の産業を支え続けてきた株式会社SAKAIの会社概要です。" />
-  <meta name="theme-color" content="#0d1f45" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/sakai.css" />
+  <link rel="stylesheet" href="css/sakai-theme.css" />
 </head>
 <body>
 
-  <!-- ヘッダー -->
-  <header class="site-header is-solid">
-    <div class="header-inner">
-      <a href="index.html" class="brand" aria-label="株式会社SAKAI ホーム">
-        <div class="brand-logo">
-          <span class="brand-company">株式会社</span>
-          <span class="brand-name">SAKAI</span>
-        </div>
+  <header class="site-header">
+    <div class="header-top">
+      <a href="index.html" class="brand">
+        <span class="brand-name">SAKAI</span>
+        <span class="brand-company">株式会社SAKAI</span>
+        <span class="brand-tagline">All you need is realized with SAKAI</span>
       </a>
-      <span class="header-tel">TEL：093-381-5534</span>
+      <div class="header-info">
+        <div class="tel">TEL：093-381-5534</div>
+        <div class="address">〒800-0028 福岡県北九州市門司区下二十町11番-1号</div>
+      </div>
       <button class="nav-toggle" aria-label="メニューを開閉" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
-      <nav class="nav" aria-label="グローバルナビゲーション">
+    </div>
+    <nav class="site-nav" aria-label="グローバルナビゲーション">
+      <div class="nav-inner">
         <a href="business.html">事業内容</a>
-        <a href="company.html" class="is-current">会社概要</a>
+        <a href="company.html" class="active">会社概要</a>
         <a href="facility.html">工場と設備</a>
-        <a href="custom4.html">製作品</a>
+        <a href="custom4.html">製品ギャラリー</a>
         <a href="custom2.html">代理・特約店</a>
         <a href="access.html">アクセス</a>
         <a href="recruit.html">採用情報</a>
         <a href="contact.html">お問い合わせ</a>
-      </nav>
-    </div>
+      </div>
+    </nav>
   </header>
 
-  <!-- ページヒーロー -->
-  <section class="page-hero">
-    <div class="hero-grid" aria-hidden="true"></div>
-    <div class="page-hero-inner">
-      <span class="page-hero-label">Company</span>
-      <h1 class="page-hero-title">会社概要</h1>
-      <p class="page-hero-sub">昭和36年の創業から、北九州の産業を支え続けてきた株式会社SAKAIの概要です。</p>
-    </div>
-  </section>
+  <nav class="breadcrumb" aria-label="パンくずリスト">
+    <span><a href="index.html">トップ</a></span>
+    <span>会社概要</span>
+  </nav>
 
-  <!-- 会社情報テーブル -->
-  <section class="section reveal">
-    <span class="section-eyebrow">Company Profile</span>
-    <h2 class="section-title">会社情報</h2>
+  <div class="page-title-bar">
+    <h1>会社概要</h1>
+  </div>
 
+  <main class="site-main">
+    <h2 class="sec-title">会社情報</h2>
     <div style="overflow-x:auto;">
       <table class="sakai-table">
         <tbody>
@@ -73,20 +67,20 @@
           <tr>
             <th>所在地</th>
             <td>
-              <strong>本社</strong><br />
-              〒800-0028 福岡県北九州市門司区下二十町11番1号<br />
-              TEL.093-381-5534　FAX.093-381-5633<br /><br />
-              <strong>加工部</strong><br />
-              〒800-0115 福岡県北九州市門司区新門司3丁目3-6<br />
-              TEL.093-481-6211　FAX.093-481-6212<br /><br />
-              <strong>製造部</strong><br />
-              〒800-0115 福岡県北九州市門司区新門司3丁目3-1<br />
-              TEL.093-481-6911　FAX.093-481-6912<br /><br />
-              <strong>小倉工場</strong><br />
-              〒802-0031 福岡県北九州市小倉北区赤坂海岸5番14号<br />
-              TEL.093-512-5511　FAX.093-512-5512<br /><br />
-              <strong>戸畑営業所</strong><br />
-              〒804-0001 福岡県北九州市戸畑区飛幡町2番2号 飛幡ビル6F<br />
+              <strong>本社</strong><br>
+              〒800-0028 福岡県北九州市門司区下二十町11番1号<br>
+              TEL.093-381-5534　FAX.093-381-5633<br><br>
+              <strong>加工部</strong><br>
+              〒800-0115 福岡県北九州市門司区新門司3丁目3-6<br>
+              TEL.093-481-6211　FAX.093-481-6212<br><br>
+              <strong>製造部</strong><br>
+              〒800-0115 福岡県北九州市門司区新門司3丁目3-1<br>
+              TEL.093-481-6911　FAX.093-481-6912<br><br>
+              <strong>小倉工場</strong><br>
+              〒802-0031 福岡県北九州市小倉北区赤坂海岸5番14号<br>
+              TEL.093-512-5511　FAX.093-512-5512<br><br>
+              <strong>戸畑営業所</strong><br>
+              〒804-0001 福岡県北九州市戸畑区飛幡町2番2号 飛幡ビル6F<br>
               TEL.093-873-8611　FAX.093-873-8612
             </td>
           </tr>
@@ -105,8 +99,8 @@
           <tr>
             <th>役員</th>
             <td>
-              代表取締役社長　酒井 優治<br />
-              専務取締役　酒井 誠英<br />
+              代表取締役社長　酒井 優治<br>
+              専務取締役　酒井 誠英<br>
               取締役　酒井 香理菜
             </td>
           </tr>
@@ -117,77 +111,53 @@
           <tr>
             <th>営業品目</th>
             <td>
-              <strong>鉄鋼部：</strong>一般鋼材販売、鋼材切断販売<br /><br />
-              <strong>加工部：</strong>ベンディングロール加工、油圧プレス加工、ブレーキプレス加工、パイプベンダー加工、アングルベンダー加工<br /><br />
+              <strong>鉄鋼部：</strong>一般鋼材販売、鋼材切断販売<br><br>
+              <strong>加工部：</strong>ベンディングロール加工、油圧プレス加工、ブレーキプレス加工、パイプベンダー加工、アングルベンダー加工<br><br>
               <strong>製造部：</strong>造船向け部品（ムーバブルランプ/ドア等）、建築・土木向け鋼構造品（鉄骨、型枠、桁、橋梁等）、プラント向け製缶・機械製缶品・機械加工品・第二種圧力容器、天井クレーン製造認定工場
             </td>
           </tr>
         </tbody>
       </table>
     </div>
-  </section>
 
-  <!-- 関連ページ -->
-  <section class="section reveal" style="background:var(--gray-50);">
-    <span class="section-eyebrow">Related</span>
-    <h2 class="section-title">関連ページ</h2>
-    <div class="features-grid" style="margin-top:48px;">
-      <div class="feature reveal reveal-delay-1">
-        <div class="feature-num">Philosophy</div>
-        <h3 class="feature-title"><a href="philosophy.html" style="color:inherit;text-decoration:none;">企業理念と行動理念</a></h3>
-        <p class="feature-desc">SAKAIが大切にする価値観・行動理念をご紹介します。</p>
-        <a href="philosophy.html" class="btn btn-ghost btn-arrow" style="margin-top:16px;font-size:13px;">詳しく見る</a>
+    <h2 class="sec-title">関連ページ</h2>
+    <div class="two-col">
+      <div class="list-card">
+        <h3><a href="philosophy.html">企業理念と行動理念</a></h3>
+        <p style="font-size:13px;color:var(--gray-500);margin-top:8px;">SAKAIが大切にする価値観・行動理念をご紹介します。</p>
       </div>
-      <div class="feature reveal reveal-delay-2">
-        <div class="feature-num">History</div>
-        <h3 class="feature-title"><a href="history.html" style="color:inherit;text-decoration:none;">会社沿革</a></h3>
-        <p class="feature-desc">昭和36年の創業から現在までの歩みをご覧いただけます。</p>
-        <a href="history.html" class="btn btn-ghost btn-arrow" style="margin-top:16px;font-size:13px;">詳しく見る</a>
+      <div class="list-card">
+        <h3><a href="history.html">会社沿革</a></h3>
+        <p style="font-size:13px;color:var(--gray-500);margin-top:8px;">昭和36年の創業から現在までの歩みをご覧いただけます。</p>
       </div>
     </div>
-  </section>
+  </main>
 
-  <!-- フッター -->
   <footer class="site-footer">
     <div class="footer-inner">
-      <div class="footer-brand">
-        <a href="index.html" class="brand">
-          <div class="brand-logo">
-            <span class="brand-company">株式会社</span>
-            <span class="brand-name">SAKAI</span>
-          </div>
-        </a>
-        <p class="footer-desc">北九州市門司区を拠点とする鋼材の流通及び金属加工業者。昭和36年の創業から、製缶・曲げ加工・鋼材販売を通じて産業を支えています。</p>
+      <nav class="footer-nav" aria-label="フッターナビゲーション">
+        <a href="index.html">トップ</a>
+        <a href="business.html">事業内容</a>
+        <a href="company.html">会社概要</a>
+        <a href="custom4.html">製品ギャラリー</a>
+        <a href="facility.html">工場と設備</a>
+        <a href="philosophy.html">企業理念と行動理念</a>
+        <a href="contact.html">お問い合わせ</a>
+        <a href="quality.html">安全と品質</a>
+        <a href="history.html">沿革</a>
+        <a href="custom1.html">主要取引先／協力会社</a>
+        <a href="access.html">アクセス</a>
+        <a href="custom2.html">代理・特約店</a>
+        <a href="recruit.html">採用情報</a>
+      </nav>
+      <div class="footer-info">
+        <a href="privacy.html">プライバシーポリシー</a><br>
+        株式会社SAKAI　〒800-0028 福岡県北九州市門司区下二十町11-1　TEL.093-381-5534
       </div>
-      <div class="footer-col">
-        <h4>事業・製品</h4>
-        <ul>
-          <li><a href="business.html">事業内容</a></li>
-          <li><a href="quality.html">安全と品質</a></li>
-          <li><a href="facility.html">工場と設備</a></li>
-          <li><a href="custom4.html">製品ギャラリー</a></li>
-          <li><a href="custom1.html">主要取引先/協力会社</a></li>
-          <li><a href="custom2.html">代理・特約店</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>会社情報</h4>
-        <ul>
-          <li><a href="company.html">会社概要</a></li>
-          <li><a href="philosophy.html">企業理念と行動理念</a></li>
-          <li><a href="history.html">会社沿革</a></li>
-          <li><a href="access.html">アクセス</a></li>
-          <li><a href="recruit.html">採用情報</a></li>
-          <li><a href="contact.html">お問い合わせ</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© <span data-current-year>2025</span> 株式会社SAKAI. All rights reserved.</span>
-      <span>Kitakyushu, Japan</span>
+      <div class="footer-copy">Copyright © SAKAI Co.,Ltd. All rights reserved.</div>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/sakai.js"></script>
 </body>
 </html>
